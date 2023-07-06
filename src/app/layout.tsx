@@ -1,6 +1,6 @@
 import { Container, SSRProvider } from '@/components/bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './globals.css'
+// import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './NavBar';
 
@@ -22,7 +22,7 @@ export default function RootLayout({
         <SSRProvider>
           <Navbar/>
           <main>
-          <Container className='py-4'>
+          <Container className='py-4 gap-5'>
             {children}
           </Container>
           </main>

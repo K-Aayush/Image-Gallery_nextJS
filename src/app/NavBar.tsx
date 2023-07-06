@@ -11,10 +11,8 @@ const NavBar = () => {
   return (
     <Navbar bg="primary" variant='dark' sticky='top' expand="sm" collapseOnSelect>
       <Container>
-        <Navbar.Brand>
-          <Link href={"/"}>
-            Home
-          </Link>
+        <Navbar.Brand as={Link} href={"/"}>
+          Home
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='main-navbar' />
         <Navbar.Collapse id='main-navbar'>
