@@ -1,5 +1,6 @@
 import { UnsplashUser } from "@/models/unsplash-user";
 import { Metadata } from "next";
+import { Alert } from "@/components/bootstrap";
 
 interface PageProps {
     params: { username: string },
@@ -24,6 +25,10 @@ export default async function uernamePage({ params: { username } }: PageProps) {
 
     return(
         <div>
+            <Alert>
+                This Profile page uses <strong>generateMetadata</strong> to set the <strong>page title</strong> dynamically from the API response.
+            </Alert>
+
             <h1>{user.username}</h1>
             <p>First name: {user.first_name}</p>
             <p>Last name: {user.last_name}</p>

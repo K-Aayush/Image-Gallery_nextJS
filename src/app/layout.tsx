@@ -1,6 +1,6 @@
 import { Container, SSRProvider } from '@/components/bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './globals.css'
+import './globals.css'
 import { Inter } from 'next/font/google'
 import Navbar from './NavBar';
 

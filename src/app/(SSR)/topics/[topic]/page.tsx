@@ -17,7 +17,7 @@ export function generateMetadata({ params: { topic } }: PageProps): Metadata {
 }
 
 export function generateStaticParams() {
-    return ["health", "fitness", "coding"].map(topic => ({ topic }))
+    return ["Fitness", "Coding", "Anime", "Cars", "Bikes"].map(topic => ({ topic }))
 }
 
 

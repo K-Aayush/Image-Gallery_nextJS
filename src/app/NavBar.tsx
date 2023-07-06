@@ -12,7 +12,7 @@ const NavBar = () => {
     <Navbar bg="primary" variant='dark' sticky='top' expand="sm" collapseOnSelect>
       <Container>
         <Navbar.Brand as={Link} href={"/"}>
-          Home
+          Image Gallery
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='main-navbar' />
         <Navbar.Collapse id='main-navbar'>
@@ -21,9 +21,11 @@ const NavBar = () => {
             <Nav.Link as={Link} href='/dynamic' active={pathname === "/dynamic"}>Dynamic</Nav.Link>
             <Nav.Link as={Link} href='/isr' active={pathname === "/isr"}>ISR</Nav.Link>
             <NavDropdown title="topics" id="topics-dropdown">
-              <NavDropdown.Item as={Link} href="/topics/health">Health</NavDropdown.Item>
-              <NavDropdown.Item as={Link} href="/topics/fitness">Fitness</NavDropdown.Item>
-              <NavDropdown.Item as={Link} href="/topics/coding">Coding</NavDropdown.Item>
+              <NavDropdown.Item as={Link} href="/topics/Fitness">Fitness</NavDropdown.Item>
+              <NavDropdown.Item as={Link} href="/topics/Coding">Coding</NavDropdown.Item>
+              <NavDropdown.Item as={Link} href="/topics/Anime">Anime</NavDropdown.Item>
+              <NavDropdown.Item as={Link} href="/topics/Cars">Cars</NavDropdown.Item>
+              <NavDropdown.Item as={Link} href="/topics/Bikes">Bikes</NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
